@@ -58,8 +58,7 @@ mnn模型量化（如果支持的话）：
 
 
 ## 将编译好的MNN库文件（include中的MNN）复制到[github项目](https://github.com/Reversev/Internships/tree/main/YOLOv5_mnn)
-
-)对应的include路径下
+对应的include路径下
 ```bash
 include
 |-- MNN    ## 拷贝MNN-master下的文件夹
@@ -97,9 +96,15 @@ include
 3 directories, 28 files
 ```
 
+具体命令如下（假设当前在build文件夹下）:
+```shell
+cp -r ../include/MNN <to_your-yolo-path>
+cp libMNN.so <to_your-yolo-path>
+```
+
 ## 运行C++文件推理（需要安装Opencv）
 ```bash
-git clone （）
+git clone https://github.com/Reversev/Internships/tree/main/YOLOv5_mnn.git
 cd yolov5_mnn-master
 mkdir build && cd build 
 cmake ..
@@ -134,6 +139,6 @@ float nms_threshold = 0.5;  // nms confience threshold
 # Reference
 [1] https://www.yuque.com/mnn/cn/wwueoh
 
-[2] 参考c++ mnn代码：https://github.com/tymanman/yolov5_mnn
+[2] https://github.com/tymanman/yolov5_mnn
 
 [3] MNN: A Universal and Efficient Inference Engine
