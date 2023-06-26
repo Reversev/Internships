@@ -1,4 +1,4 @@
-# pedestrain attribute recongnition onnx cpp
+# Pedestrain attribute recongnition onnx cpp
 
 ## Usage
 ```shell
